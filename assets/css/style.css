@@ -30,7 +30,11 @@
     margin-left: 96px;
     padding-bottom: 5px;
     bottom: 0px;
+}
+
+#name a {
     text-decoration: none;
+    color: white; 
 }
 
 #home {
@@ -95,18 +99,6 @@
      background-color: #EEEEEE;
      border-top: 2px solid #dddddd;
  }
-
- #section {
-    background-color: white;
-    position: relative;
-    width: 495px;
-    padding: 12px 20px 20px 20px;
-    margin-top: 10px;
-    margin-left: 10%;
-    margin-bottom: 25px;
-    height: 450px;
-    border-bottom: solid .5px lightgrey;
-}
 
 #home_section {
     background-color: white;
