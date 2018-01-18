@@ -30,6 +30,29 @@
     margin-left: 96px;
     padding-bottom: 5px;
     bottom: 0px;
+    text-decoration: none;
+}
+
+#home {
+    font-size: 15px;
+    color: grey;
+    line-height: 145%;
+    position: absolute;
+    border-top: solid 2px lightgrey;
+    padding-top: 12px;
+    width: 90%;
+    height: 77%;
+    bottom: 10px;
+}
+
+#home_header {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    font-size: 30px;
+    font-weight: bold;
+    height: 80px;
+    line-height: 80px;
+    float: left;
 }
 
 #nav {
@@ -145,8 +168,6 @@ textarea {
     bottom: 10px;  
 }
 
-
-
 #about img {
     width: 30%;
     height: auto;
@@ -225,8 +246,6 @@ button {
     border-bottom: solid .5px lightgrey;
     padding-bottom: 10px;
 }
-
-
 
 #icon {
     float: left;
