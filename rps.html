@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors
+  </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script src="https://use.fontawesome.com/281d32e0e0.js"></script>
+</head>
+
+<style>
+  body {
+    background: url("https://media.giphy.com/media/kWJlSWnPgdlba/giphy.gif");
+  }
+
+  .jumbotron{
+    margin-top: 15px;
+    background-color: blanchedalmond;
+    color: blue;
+  }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8">
+            <div class="jumbotron text-center">
+                <div class="page-header" style="font-size: 22px">
+                    Welcome to Rock <i class="fa fa-hand-rock-o" aria-hidden="true"></i>, 
+                    Paper <i class="fa fa-hand-paper-o" aria-hidden="true"></i>, 
+                    Scissors <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+                </div>
+                <hr>
+                <div id="game">
+                    <div class="btn btn-default" id="button">
+                      Click to Play
+                    </div>  <br>
+                    <span id="remind"></span>
+                    <div class="row">
+                      <div class="col-md-6">
+                        Wins:
+                      </div>
+                      <div class="col-md-6">
+                        <span id="win">0</span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        Losses:
+                      </div>
+                      <div class="col-md-6">
+                        <span id="loss">0</span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        Ties:
+                      </div>
+                      <div class="col-md-6">
+                        <span id="tie">0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <script type="text/javascript">
+
+    // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+    var wins = 0
+    var losses = 0
+    var ties = 0;
+    
+    var select = document.getElementById("choice")
+    var reminder = document.getElementById("remind")
+    var winRate = document.getElementById("win");
+    var lossRate = document.getElementById("loss");
+    var tieRate = document.getElementById("tie");
+
+    document.getElementById("button").addEventListener("click", function(){
+      
+      alert("Let The Games Begin. Select r for rock, s for scissors, or p for paper")
+      reminder.textContent = "Please select r, p, or s"
+      var computerChoices = ["r", "p", "s"]
+
+      // This function is run whenever the user presses a key.
+      document.onkeyup = function(event) {
+        
+
+        // Determines which key was pressed.
+        var userGuess = event.key
+        
+        
+        
+        
+        if(userGuess !== "r" && userGuess !== "p" && userGuess !== "s"){
+          alert("Please only input r, p, or s")
+        }
+        // Randomly chooses a choice from the options array. This is the Computer's guess.
+        var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)]
+
+        if(userGuess === "r" || userGuess === "p" || userGuess === "s"){
+          reminder.textContent = null
+          // Alerts the key the user pressed (userGuess).
+          alert("User guess: " + userGuess)
+          // Alerts the Computer's guess.
+          alert("Computer guess: " + computerGuess)
+          
+          if(userGuess === "r"){
+              if(computerGuess === "p"){
+                alert("You Lose")
+                losses++
+                
+              }
+              else if(computerGuess === "s"){
+                alert("You Win")
+                wins++
+                
+              }
+              else{
+                alert("Tie. Please try again")
+                ties++ 
+              }
+            }
+            else if(userGuess === "p"){
+              if(computerGuess === "s"){
+                alert("You Lose")
+                losses++
+                
+              }
+              else if(computerGuess === "r"){
+                alert("You Win")
+                wins++
+                
+              }
+              else{
+                alert("Tie. Please try again")
+                ties++ 
+              }
+            }
+            else{
+              if(computerGuess === "r"){
+                alert("You Lose")
+                losses++
+                
+              }
+              else if(computerGuess === "p"){
+                alert("You Win")
+                wins++
+                
+              }
+              else{
+                alert("Tie. Please try again")
+                ties++ 
+            }
+          }
+        }
+
+        winRate.textContent = wins;
+        lossRate.textContent = losses;
+        tieRate.textContent = ties;
+
+      }
+    })
+
+  </script>
+
+</body>
+
+</html>
+
