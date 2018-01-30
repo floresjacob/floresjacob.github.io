@@ -343,28 +343,28 @@ button {
     margin-bottom: 10px;
  }
 
- @media only screen and (max-width: 768px){
+ @media screen and (max-width: 768px){
     .header {
         width: 100%;
     }
 
-    .home_section {
+    #home_section {
         width: 100%;
     }
 
-    .about_section {
+    #about_section {
         width: 100%;
     }
 
-    .port_section {
+    #port_section {
         width: 100%;
     }
 
-    .contact_section {
+    #contact_section {
         width: 100%;
     }
 
-    .aside {
+    #aside {
         width: 100%;
     }
 
