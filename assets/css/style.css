@@ -342,3 +342,15 @@ button {
     text-align: center;
     margin-bottom: 10px;
  }
+
+ @media screen and (max-width 767px){
+    body{
+        max-width: 680px;        
+    }
+    .wrapper{
+        padding: 0px 15px 5px 15px;
+        font-size: 14px;
+        width: 650px;
+    }
+
+ }
