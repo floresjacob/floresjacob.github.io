@@ -345,7 +345,7 @@ button {
 
  @media screen and (max-width: 768px){
     .wrapper{
-        width: 100%;
+        width: 85vw;
     }
 
     .row{
@@ -360,7 +360,7 @@ button {
 
     #nav{
         display: block;
-        width: 80%;
+        width: 40vw;
     }
 
     .header #name,
@@ -372,6 +372,7 @@ button {
 
     #home_header{
         font-size: 4vw;
+        margin: auto;
     }
 
     #home_section,
@@ -380,6 +381,7 @@ button {
     #contact_section,
     #aside{
         width: 65vw;
+        margin: auto;
     }
 
     .gallery,
@@ -389,7 +391,7 @@ button {
     }
 
     #aside{
-        margin-left: 10vw;
+        font-size: 3vw;
     }
 
     #aside i{
