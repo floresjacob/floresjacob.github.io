@@ -344,30 +344,61 @@ button {
  }
 
  @media screen and (max-width: 768px){
-    .header {
+    .wrapper{
         width: 100%;
     }
 
-    #home_section {
-        width: 100%;
+    .row{
+        display: block;
     }
 
-    #about_section {
-        width: 100%;
+    #name{
+        width: 80%;
+        display: block;
+        margin: auto;
     }
 
-    #port_section {
-        width: 100%;
+    #nav{
+        display: block;
+        width: 80%;
     }
 
-    #contact_section {
+    .header #name,
+    .header #nav{
+        float: none;
+        text-align: center;
         width: 100%;
+    }  
+
+    #home_header{
+        font-size: 4vw;
     }
 
-    #aside {
-        width: 100%;
+    #home_section,
+    #port_section,
+    #about_section,
+    #contact_section,
+    #aside{
+        width: 65vw;
     }
 
+    .gallery,
+    .gallery img{
+        width: 30vw;
+        text-align: center;
+    }
 
+    #aside{
+        margin-left: 10vw;
+    }
+
+    #aside i{
+        margin: 3vw 6vw 0 7vw;
+    }
+
+    #home img{
+        width: 45vw;
+        text-align: center;
+    }
 
  }
