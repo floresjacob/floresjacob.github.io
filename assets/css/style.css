@@ -343,14 +343,31 @@ button {
     margin-bottom: 10px;
  }
 
- @media screen and (max-width 767px){
-    body{
-        max-width: 680px;        
+ @media only screen and (min-width: 768px){
+    .header {
+        width: 100%;
     }
-    .wrapper{
-        padding: 0px 15px 5px 15px;
-        font-size: 14px;
-        width: 650px;
+
+    .home_section {
+        width: 100%;
     }
+
+    .about_section {
+        width: 100%;
+    }
+
+    .port_section {
+        width: 100%;
+    }
+
+    .contact_section {
+        width: 100%;
+    }
+
+    .aside {
+        width: 100%;
+    }
+
+
 
  }
